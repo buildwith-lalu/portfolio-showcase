@@ -27,7 +27,7 @@ Open PowerShell in this folder and run:
 
 cd C:\Users\LaluPrasad\Desktop\portfolio-website
 
-git remote add origin https://github.com/laluprasad/laluprasad.github.io.git
+git remote add origin https://github.com/lalu2019/laluprasad.github.io.git
 git branch -M main
 git push -u origin main
 
@@ -85,7 +85,7 @@ WHAT'S INCLUDED:
 ✨ CONTACT SECTION
 - Email: mapparena@gmail.com
 - LinkedIn: linkedin.com/in/lalu-prasad-27111859
-- GitHub: github.com/laluprasad
+- GitHub: github.com/lalu2019
 
 ========================================
 AFTER DEPLOYMENT:

@@ -23,7 +23,7 @@ Replace these 3 items:
 
 3. GITHUB:
    Find: github.com/yourusername
-   Replace with: github.com/laluprasad
+   Replace with: github.com/lalu2019
    Click "Replace All"
 
 Save the file (Ctrl + S)
@@ -43,7 +43,7 @@ git commit -m "Update contact information"
 # Create GitHub repository first at: https://github.com/new
 # Name it: laluprasad.github.io
 
-git remote add origin https://github.com/laluprasad/laluprasad.github.io.git
+git remote add origin https://github.com/lalu2019/laluprasad.github.io.git
 git branch -M main
 git push -u origin main
 
