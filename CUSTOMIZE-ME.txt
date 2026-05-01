@@ -1,0 +1,65 @@
+===========================================
+QUICK CUSTOMIZATION GUIDE
+===========================================
+
+STEP 1: Update Contact Information
+-----------------------------------
+
+Open "index.html" in any text editor (Notepad, VS Code, etc.)
+
+Press Ctrl + H (Find and Replace)
+
+Replace these 3 items:
+
+1. EMAIL:
+   Find: your.email@example.com
+   Replace with: mapparena@gmail.com
+   Click "Replace All"
+
+2. LINKEDIN:
+   Find: linkedin.com/in/yourprofile
+   Replace with: linkedin.com/in/lalu-prasad-27111859
+   Click "Replace All"
+
+3. GITHUB:
+   Find: github.com/yourusername
+   Replace with: github.com/laluprasad
+   Click "Replace All"
+
+Save the file (Ctrl + S)
+
+STEP 2: Deploy to GitHub Pages
+-------------------------------
+
+Open PowerShell in the portfolio-website folder
+
+Run these commands:
+
+cd C:\Users\LaluPrasad\Desktop\portfolio-website
+
+git add .
+git commit -m "Update contact information"
+
+# Create GitHub repository first at: https://github.com/new
+# Name it: laluprasad.github.io
+
+git remote add origin https://github.com/laluprasad/laluprasad.github.io.git
+git branch -M main
+git push -u origin main
+
+# Then enable GitHub Pages in repository Settings → Pages
+
+Your site will be live at: https://laluprasad.github.io
+
+===========================================
+THAT'S IT! 
+===========================================
+
+Your portfolio is ready to deploy.
+Just update those 3 contact details and push to GitHub.
+
+Time needed: 5-10 minutes
+
+For detailed instructions, see:
+- QUICK-START.md
+- DEPLOYMENT-GUIDE.md
