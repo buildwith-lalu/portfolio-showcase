@@ -30,7 +30,7 @@ Your professional portfolio website is complete with:
 
 ### Option 1: Quick Deploy (10 minutes) ⚡
 Follow `QUICK-START.md` for fastest deployment
-
+p
 ### Option 2: Detailed Deploy (20 minutes) 📚
 Follow `DEPLOYMENT-GUIDE.md` for step-by-step instructions
 
