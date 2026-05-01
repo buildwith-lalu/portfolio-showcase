@@ -27,7 +27,7 @@ Open PowerShell in this folder and run:
 
 cd C:\Users\LaluPrasad\Desktop\portfolio-website
 
-git remote add origin https://github.com/lalu2019/laluprasad.github.io.git
+git remote add origin https://https://github.com/buildwith-lalu/portfolio-showcase.git
 git branch -M main
 git push -u origin main
 
@@ -70,9 +70,9 @@ WHAT'S INCLUDED:
 1. Simply Save (Vernacular) - 2025 ⭐
 2. Business Easy (Nippon India) - 2024 ⭐
 3. Simply Save - 2023
-4. Nippon India Mutual Fund App - 2022
-5. Ayuscholar E-School - 2020
-6. Desktop Document Editor (VDTP)
+4. Nippon India Mutual Fund App - 2024
+5. Ayuscholar E-School - 2022
+6. Desktop Document Editor (VDTP) - 2026
 
 ✨ SKILLS SECTION
 - Frontend: React Native, ReactJS, Angular, Ionic, TypeScript
@@ -85,7 +85,7 @@ WHAT'S INCLUDED:
 ✨ CONTACT SECTION
 - Email: mapparena@gmail.com
 - LinkedIn: linkedin.com/in/lalu-prasad-27111859
-- GitHub: github.com/lalu2019
+- GitHub: github.com/buildwith-lalu
 
 ========================================
 AFTER DEPLOYMENT:
