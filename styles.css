@@ -760,3 +760,70 @@ section {
     font-weight: 600;
     color: var(--text-secondary);
 }
+
+/* ===== Featured AI Skills ===== */
+.featured-skill {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 165, 0, 0.1) 100%);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(255, 215, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-skill::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.skill-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #1f2937;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.skill-description {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: left;
+}
+
+.ai-tag {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%) !important;
+    color: #1f2937 !important;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    font-weight: 700;
+}
+
+.ai-tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
