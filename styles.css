@@ -827,3 +827,248 @@ section {
         transform: translateX(100%) translateY(100%) rotate(45deg);
     }
 }
+
+/* ===== Available Badge (Hero) ===== */
+.available-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1.5px solid #6ee7b7;
+    padding: 0.4rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    animation: pulse-green 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-green {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.3); }
+    50% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+}
+
+/* ===== Availability Status (Contact CTA) ===== */
+.availability-status {
+    display: inline-block;
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1.5px solid #6ee7b7;
+    padding: 0.4rem 1.2rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+/* ===== CTA Buttons (Contact) ===== */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+/* ===== Services Section ===== */
+.services {
+    background: var(--bg-primary);
+    padding: 5rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.service-card.featured-service {
+    border: 2px solid var(--primary-color);
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.service-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.service-desc {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.service-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.service-list li {
+    padding: 0.4rem 0;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.service-list li i {
+    color: var(--success-color);
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.service-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* ===== Engagement Card ===== */
+.engagement-card {
+    background: linear-gradient(135deg, #fafafa 0%, #f0f4ff 100%);
+}
+
+.engagement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.engagement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.2s ease;
+}
+
+.engagement-item:hover {
+    border-color: var(--primary-color);
+}
+
+.engagement-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.engagement-item strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+}
+
+.engagement-item p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* ===== Responsive — Services ===== */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ===== AI Integration Skill Card ===== */
+.ai-integration-skill {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8f5e9 100%);
+    border: 2px solid #a5b4fc;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-integration-skill::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.06), transparent);
+    animation: shimmer 4s ease-in-out infinite;
+}
+
+.ai-int-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+}
+
+.skill-tag.ai-int-tag {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
+    color: white !important;
+    box-shadow: 0 3px 10px rgba(99, 102, 241, 0.3);
+    font-weight: 600;
+}
+
+.skill-tag.ai-int-tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(99, 102, 241, 0.45);
+}
+
+.skill-description.ai-int-desc {
+    background: rgba(99, 102, 241, 0.08);
+    border-left: 4px solid #6366f1;
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: left;
+}
