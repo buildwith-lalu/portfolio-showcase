@@ -64,15 +64,13 @@ body {
 }
 
 .nav-brand {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    letter-spacing: -0.3px;
     color: var(--primary-color);
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    white-space: nowrap;
 }
 
 .nav-menu {
